@@ -1,0 +1,65 @@
+<section class="home container mx-auto" ng-mousemove="mouse==true">
+    <div class="swiper home-swiper">
+        <div class="swiper-wrapper">
+            <swiper [navigation]="true" class="mySwiper">
+                <ng-template swiperSlide>
+                    <section class="home_content grid md:grid-cols-2">
+                        <div class="img">
+                            <img src="../../../assets/img/home1-img.png" alt="">
+                        </div>
+                        <div class="content__img">
+                            <h3>#1 TOP SCARIEST GHOST</h3>
+                            <h1>UOOOO</h1>
+                            <h1>TRICK OR</h1>
+                            <h1>TREAT!!</h1>
+                            <p class="home__description">Hi, I'm Reiza, people call me "El Labu". I am currently trying to learn something new, building my own bike with parts made only in Malaysia.
+                            </p><br> <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"> BookNow
+                        </button>
+                        </div>
+                    </section>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <section class="home_content grid md:grid-cols-2">
+                        <div class="img2">
+                            <img src="../../../assets/img/home2-img.png" alt="">
+                        </div>
+                        <div class="content__img">
+                            <h3>#2 top Best duo</h3>
+                            <h1>BRING BACK <br> MY COTTON <br> CANDY</h1>
+
+                            <p class="home__description">Adino steals cotton candy from his brother and eats them all in one bite, a hungry beast. Grahami can no longer contain his anger towards Adino.
+                            </p><br>
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"> BookNow
+                        </button>
+                        </div>
+                    </section>
+                </ng-template>
+            </swiper>
+
+
+        </div>
+    </div>
+</section>
+<section class="section category">
+    <h2 class="section__title text-center">Favorite Scare <br> Category</h2>
+
+    <div class="category__container container mx-auto grid grid-cols-3">
+        <div class="category__data">
+            <img src="assets/img/category1-img.png" alt="" class="category__img">
+            <h3 class="category__title">Ghosts</h3>
+            <p class="category__description">Choose the ghosts, the scariest there are.</p>
+        </div>
+
+        <div class="category__data">
+            <img src="assets/img/category2-img.png" alt="" class="category__img">
+            <h3 class="category__title">Pumpkins</h3>
+            <p class="category__description">You look at the scariest pumpkins there is.</p>
+        </div>
+
+        <div class="category__data">
+            <img src="assets/img/category3-img.png" alt="" class="category__img">
+            <h3 class="category__title">Witch Hat</h3>
+            <p class="category__description">Pick the most stylish witch hats out there.</p>
+        </div>
+    </div>
+</section>

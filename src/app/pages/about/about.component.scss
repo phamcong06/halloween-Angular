@@ -1,0 +1,44 @@
+.about {
+    margin-top: 70px;
+    font-size: 30px;
+    position: relative;
+    &__title {
+        font-size: 60px;
+        font-family: 'Zen Antique Soft', serif;
+    }
+    &__img {
+        position: absolute;
+        top: -600px;
+        right: 0px;
+    }
+    &__data {
+        >a {
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 763px) {
+    .about {
+        margin-top: 70px;
+        font-size: 30px;
+        position: relative;
+        text-align: center;
+        &__title {
+            font-size: 40px;
+            font-family: 'Zen Antique Soft', serif;
+        }
+        &__img {
+            position: fixed;
+            top: 0;
+            opacity: 0.5;
+        }
+        &__data {
+            position: fixed;
+            top: -100;
+            >a {
+                cursor: pointer;
+            }
+        }
+    }
+}

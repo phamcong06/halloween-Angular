@@ -1,0 +1,49 @@
+.section {
+    width: 50%;
+    padding-top: 50px;
+    box-sizing: border-box;
+    &__title {
+        font-size: 40px;
+        font-family: 'Oswald', sans-serif;
+    }
+}
+
+.candy {
+    &__container {
+        padding-top: 30px;
+    }
+    &__content {
+        background: var(--container-color);
+        position: relative;
+        border: 1px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px 10px;
+        overflow: hidden;
+        box-sizing: border-box;
+        >img {
+            padding-left: 90px;
+            width: 200px;
+        }
+        &:hover .candy__img {
+            transform: translateY(-.5rem);
+            transition: 2s;
+        }
+        &:hover .candy__btn {
+            right: 0;
+            transition: 2s;
+        }
+    }
+    &__btn {
+        width: 40px;
+        position: absolute;
+        right: -50px;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 763px) {
+    .section {
+        width: 100%;
+    }
+}

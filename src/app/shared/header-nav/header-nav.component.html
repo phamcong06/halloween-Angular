@@ -1,0 +1,36 @@
+<nav class="nav">
+    <div class="flex flex-row container mx-auto justify-around md:justify-evenly ">
+        <a href="#" class="nav__logo flex flex-row text-2xl text-white">
+            <img src="../../../assets/img/logo.png" alt="" class="w-6 "> Halloween
+        </a>
+        <div class="nav__menu flex ustify-around md:block" [class.showMenu]="clicked==true">
+            <img src="../../../assets/img/nav-img.png" alt="" class=" h-30 md:hidden">
+            <ul class="nav__list grid  md:grid-cols-5 gap-9 text-xl">
+                <li class="nav__item">
+                    <a [routerLink]="['/']" class="nav__link   text-white " [class.active-link]="home==true" (click)="onClickHome()" (click)="onClick() ">Home</a>
+                </li>
+
+                <li class=" nav__item ">
+                    <a [routerLink]="[ '/about'] " class="nav__link text-white " [class.active-link]="about==true" (click)="onClickAbout() " (click)="onClick() ">About</a>
+                </li>
+
+                <li class="nav__item ">
+                    <a [routerLink]="[ '/candy'] " class="nav__link text-white " [class.active-link]="candy==true" (click)="onClickCandy() " (click)="onClick() ">Candy</a>
+                </li>
+
+                <li class="nav__item ">
+                    <a [routerLink]="[ '/new'] " class="nav__link text-white " [class.active-link]="new==true" (click)="onClickNew() " (click)="onClick() ">New</a>
+                </li>
+
+
+            </ul>
+            <div class="toggle__close md:hidden " (click)="onClick() ">
+                <svg xmlns="http://www.w3.org/2000/svg " width="34 " height="34 " viewBox="0 0 24 24 " style="fill: rgb(255, 255, 255);transform: msFilter; "><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414
+                        1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z "></path></svg>
+            </div>
+        </div>
+        <div class="nav__toggle md:hidden " (click)="onClick() ">
+            <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 " style="fill: rgb(255, 255, 255);transform: msFilter; "><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z "></path></svg>
+        </div>
+    </div>
+</nav>

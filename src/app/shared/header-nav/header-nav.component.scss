@@ -1,0 +1,46 @@
+    .nav {
+        position: sticky;
+        z-index: 1000;
+        top: 0;
+        &__link:hover {
+            color: rgb(201, 200, 200);
+        }
+    }
+    
+    .active-link {
+        position: relative;
+    }
+    
+    .active-link::before {
+        content: '';
+        position: absolute;
+        bottom: -.75rem;
+        left: 45%;
+        width: 5px;
+        height: 5px;
+        background-color: var(--title-color);
+        border-radius: 50%;
+    }
+    
+    @media screen and (max-width: 767px) {
+        .nav__menu {
+            position: fixed;
+            width: 100%;
+            background: var(--container-color);
+            top: -150%;
+            left: 0;
+            transition: .4s;
+            z-index: var(--z-fixed);
+            border-radius: 0 0 1.5rem 1.5rem;
+        }
+    }
+    
+    .toggle__close {
+        position: fixed;
+        right: 0;
+    }
+    
+    .showMenu {
+        top: 0;
+        transition: 2s;
+    }
